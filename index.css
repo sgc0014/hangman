@@ -1,0 +1,58 @@
+body {
+  background: #353d69;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+button {
+  background: #2c229b;
+  border: 0px;
+  padding: 15px;
+  border-radius: 30px;
+  color: #fff;
+}
+
+button:hover{
+    box-shadow: #fff 0px 1px 8px;
+    z-index: 2;
+}
+
+.figure{
+  stroke: #ffffff;
+  stroke-width: 4px;
+  fill: transparent;
+
+}
+.figurepart{
+  display: none;
+}
+.input{
+  display: inline-flex;
+  font-size: 45px;
+ 
+}
+.input>.letter{
+
+  margin: 0px 3px;
+}
+#wrong{
+  font-size: 50px;
+}
+
+#message {
+	z-index: 2;
+	background: #002a34;
+	padding: 19px;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: black 19px -4px 28px;
+  height: 9rem;
+  position: absolute;
+  top:33%;
+  width: 33rem;
+
+}

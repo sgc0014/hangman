@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title >Hangman</title>
+  </head>
+  <style>
+    @import url("./index.css");
+  </style>
+  <body>
+
+    <h1 style="color: #fff;">Hangman</h1>
+
+    <p>Guess and type words. Can you save Ken from being hanged?</p>
+
+
+    <div class="figure-container">
+     
+      <svg class="figure" width="200" height="250">
+        <!--Rod-->
+        <line x1="10" y1="20" x2="140" y2="20"></line>
+        <line x1="140" y1="20" x2="140" y2="60"></line>
+        <line x1="10" y1="20" x2="10" y2="220"></line>
+        <line x1="5" y1="220" x2="60" y2="220"></line>
+
+        <!--Head-->
+        <circle class="figurepart" cx="140" cy="71" r="13" />
+        <!--Body-->
+        <line class="figurepart" x1="140" y1="85" x2="140" y2="155" />
+        <line class="figurepart" x1="140" y1="95" x2="110" y2="120" />
+        <line class="figurepart" x1="140" y1="95" x2="169" y2="120" />
+        <line class="figurepart" x1="140" y1="155" x2="110" y2="180" />
+        <line class="figurepart" x1="140" y1="155" x2="170" y2="180" />
+      </svg>
+    </div>
+
+    
+    <div class="input"></div>
+
+    <div id="message">
+      
+    </div>
+
+    <div id="wrong"><h7>Wrong</h7><br /></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
